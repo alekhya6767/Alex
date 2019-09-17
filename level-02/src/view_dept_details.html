@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>STUDENT PORTAL</title>
+        <style>
+                a:visited,a:link{
+                  text-decoration: none;
+                  background-color: grey;
+                  color: white;
+                  padding: 12px 18px;
+                  margin-top: 8px;
+                  margin-right: 16px;
+                  border: none;
+                  border-radius: 4px;
+                  float: right;
+                }
+				.saby{ color: #FFFFFF; }
+                </style>
+    </head>
+<body>
+<h1 class="saby">FETCH DEPARTMENT DETAILS</h1>
+<br/>
+<form>    
+        <label for="department" class="saby">Department:</label><br/>
+        <select class="deptd" name="department">
+            <option value="EEE">EEE</option>
+            <option value="MECH">MECH</option>
+            <option value="CSE">CSE</option>
+            <option value="CIVIL">CIVIL</option>
+        </select>
+ <label for="section" class="saby">Section:</label><br/>
+ <select class="deptd" name="department">
+     <option value="Any">Any</option>
+     <option value="A">A</option>
+     <option value="B">B</option>
+     <option value="C">C</option>
+ </select>
+<br/>
+<input onclick="show()" value="Get List" id="clicks" type="submit"> 
+<a href="view_details.html">Go Back</a>
+</form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>STUDENT PORTAL</title>
+        <style>
+               a:visited,a:link{
+                  text-decoration: none;
+                  background-color: grey;
+                  color: white;
+                  padding: 12px 18px;
+                  margin-top: 8px;
+                  margin-right: 16px;
+                  border: none;
+                  border-radius: 4px;
+                  float: right;
+                }
+				.saby{ color: #FFFFFF; }
+                </style>
+    </head>
+<body>
+<h1 class="saby">FETCH STUDENT DETAILS</h1>
+<br/>
+<form>    
+    <label for="roll" class="saby">Roll Number:</label>
+     <input type="text" name="rollnumber" placeholder="Enter your Roll Number here">
+<br/>
+<input onclick="show()" value="Request" id="clicks" type="submit"> 
+<a href="view_details.html">Go Back</a>
+</form>
+</body>
+</html>

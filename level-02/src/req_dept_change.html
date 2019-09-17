@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>STUDENT PORTAL</title>
+        <style>
+            a:link,a:visited,a:hover,a:active{
+                  text-decoration: none;
+                  background-color: grey;
+                  color: white;
+                  padding: 12px 18px;
+                  margin-top: 8px;
+                  margin-right: 16px;
+                  border: none;
+                  border-radius: 4px;
+                  float: right;
+                }
+				.heading { color: #FFFFFF; }
+            </style>
+    </head>
+<body>
+<h1 class="heading">REQUEST DEPARTMENT CHANGE</h1>
+<br/>
+<form>    
+    <label for="roll" class="heading">Roll Number:</label>
+     <input type="text" name="rollnumber" placeholder="RollNumber">
+ <label for="department" class="heading">Select Department:</label>
+ <br/>
+ <select class="deptd" name="department">
+     <option value="EEE">EEE</option>
+     <option value="MECH">MECH</option>
+     <option value="CSE">CSE</option>
+     <option value="CIVIL">CIVIL</option>
+ </select>
+<br/>
+<input onclick="register()" value="Request" type="submit">
+<a href="index.html">Go Back</a>
+</form>
+</body>
+</html>

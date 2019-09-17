@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>STUDENT PORTAL</title>
+        <style>
+		.heading { color: #FFFFFF; }
+        a:link,a:visited,a:hover,a:active{
+                  text-decoration: none;
+                  background-color: white;
+                  color: green;
+                  padding: 12px 18px;
+                  margin-top: 8px;
+                  margin-right: 16px;
+                  border: none;
+                  border-radius: 4px;
+                  float: right;
+                }
+        </style>
+    </head>
+<body>
+<h1 class="heading">ENROLL INTO A DEPARTMENT</h1>
+<br/>
+<form>    
+    <label for="name" class="heading">Name:</label>
+    <input type="text" name="name" placeholder="Please enter your name here">
+	<br>
+ <label for="dept" class="heading">Department:</label>
+ <select class="deptd" name="dept">
+     <option value="EEE">EEE</option>
+     <option value="MECH">MECH</option>
+     <option value="CSE">CSE</option>
+     <option value="CIVIL">CIVIL</option>
+ </select>
+<br/>
+<input onclick="register()" value="Register" id="clicks" type="submit">
+<a href="index.html">Go Back</a>
+</form>
+</body>
+</html>
