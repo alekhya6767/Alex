@@ -1,0 +1,35 @@
+<!-- todos.erb -->
+<!-- Todos code -->
+<header>
+  <div id='header-left'>
+    <h1>Todo List</h1>
+    <h3>Add a Todo!</h3>
+  </div>
+  <div>
+    <form action="/todos" method="POST" class="form">
+      <input type="text" name="title" autocomplete="off" />
+      <input type="date" name="date" /> 
+      <!-- <input type="text" name="date" placeholder="dd/mm/yyyy" autocomplete="off" /> --> <!-- Can be used if browser does not support date -->
+      <input type="submit" value="Submit" />
+    </form>
+  </div>
+</header>
+
+<section class='todos-container'>
+  <div class='gallery'>
+    <% @todos.each_with_index do |todo, index| %>
+      <div class='btn-container'>
+        <h3>
+          <a href="/todos/<%= index + 1 %>" class="todo-box"> <%= todo.keys[0] %></a> 
+          <% if todo.values[0]!="" %>
+          	Deadline: <%= todo.values[0] %> 
+          <% end %>
+        </h3>
+        <form method='POST' action='/todos/<%= index + 1 %>'>
+          <input type='hidden' name='_method' value='delete'>
+          <input type='submit' value='Delete'>
+        </form>
+      </div>
+    <% end %>
+  </div>
+</section>

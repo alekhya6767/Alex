@@ -1,0 +1,24 @@
+<!-- todo.erb -->
+<!-- Todo code -->
+<header>
+  <div id='header-left'>
+    <h1><%= @todo.keys[0] %></h1>
+    <% if @todo.values[0]!="" %>
+    	<h3>Deadline: <%= @todo.values[0] %></h3>
+    <% end %>
+    <h1>Update Todo</h1>
+  </div>
+</header>
+
+<section class='todo-container'>
+  <div>
+    <form action="/todos/<%= @id %>" method="POST" class="form">
+      <!-- because he cannot put a put method on our form -->
+      <input type='hidden' name='_method' value='put'>
+      <input type="text" name="title" value="<%= @todo.keys[0] %>"/>
+      <div class='btn-container'>
+        <a class='btn' href='/todos'>Back</a>
+        <input class='btn-submit' type='submit' value='save changes'></div>
+    </form>
+  </div>
+</section>
