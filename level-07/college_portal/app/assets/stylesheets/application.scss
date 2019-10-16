@@ -1,0 +1,9 @@
+  @import "bootstrap";
+
+/* Fix footer to bottom of page */
+.page-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
